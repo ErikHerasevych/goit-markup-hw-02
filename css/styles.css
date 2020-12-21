@@ -1,0 +1,172 @@
+/*цвет текста 
+основной #212121 
+вторичный #757575
+дополнительный #FFFFFF 
+лого #2196F3 и #000000 */
+
+/*цвет background 
+основной #E5E5E5 
+вторичный #2F303A
+дополнительный #F5F4FA  */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+
+  --main-background-color: #ffffff;
+  --sec-background-color: #2f303a;
+  --add-background-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+button {
+  font-family: inherit;
+}
+.current-link {
+  color: var(--accent-color);
+}
+
+/*Шапка*/
+
+.page-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.page-header :hover,
+.page-header :focus {
+  color: var(--accent-color);
+}
+.logo-top {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+.logoWeb {
+  color: var(--accent-color);
+}
+.page-contacts-top-link {
+  color: var(--primary-text-color);
+}
+
+/*Основной контент*/
+/*секция1 заказать услугу*/
+.order {
+  background-color: var(--sec-background-color);
+}
+.order-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.order-button {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: var(--accent-color);
+}
+.order-button:hover,
+.order-button:focus {
+  color: var(--white-text-color);
+}
+
+/*секция 2, 3, 4, 5*/
+.benefits-title,
+.offer-title,
+.team-title,
+.work-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.benefits-item,
+.team-item,
+.work-item {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.team {
+  background-color: var(--add-background-color);
+}
+.team-content,
+.work-content {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.work-content {
+  line-height: 1.87;
+}
+
+.works-button {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--add-background-color);
+}
+
+.works-button:hover,
+.works-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+/*Футер*/
+
+footer {
+  color: var(--white-text-color);
+  line-height: 1.71;
+  background-color: var(--sec-background-color);
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-text-color);
+}
+address {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.page-contacts-footer :hover,
+.page-contacts-footer :focus {
+  color: var(--accent-color);
+}
+.page-contacts-footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
